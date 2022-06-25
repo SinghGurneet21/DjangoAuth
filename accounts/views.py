@@ -99,8 +99,9 @@ def clientlogin(request):
 def clientlogout(request):
     if request.method == 'GET':
         email = request.GET.get('email')
+        return http.HttpResponse(f'{email} logged out')
         # client = ClientUser.objects.get(email=email)
         # if not client:
         #     return http.HttpResponse('The user does not exist!')
         # else:
-        return http.HttpResponse(f'{email} logged out')
+        
