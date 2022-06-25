@@ -56,7 +56,7 @@ def clientuser(request):
         subject = 'verification link'
         client.save()
         c1 = ClientUser.objects.get(email=email)
-        verlink = "http://127.0.0.1:8000/api/verify/"+str(c1.id)
+        verlink = "https://django-auth-gitub-heroku.herokuapp.com/api/verify/"+str(c1.id)
         linebreak = '\n'
         message = f'Please click on the link to verify the account linked to this following email address {email}{linebreak}{verlink}'
         email_from = settings.EMAIL_HOST_USER
