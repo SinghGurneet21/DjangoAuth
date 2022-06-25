@@ -9,7 +9,9 @@ Framework - Django
 Database - SQLite
 
 Types of User:
+\
 	1)Operation User
+	\
 	2)Client User
 
 Features Available for each user:
