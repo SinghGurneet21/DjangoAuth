@@ -39,16 +39,17 @@ Postman Test Case:
 	User 1 : Operation User
 	\
 		Register: 
-	    ![image](https://user-images.githubusercontent.com/79376134/175648593-1f844cee-7c76-4656-b006-48fc390ed971.png)
+	    ![image](https://user-images.githubusercontent.com/79376134/175765600-16aada56-6c12-437b-8174-304bb2953434.png)
             	Login: 
-	    ![image](https://user-images.githubusercontent.com/79376134/175648843-3e158b02-31f3-4917-a858-0ee526edae33.png)
+	    ![image](https://user-images.githubusercontent.com/79376134/175765614-ddb7359e-a938-468a-9d07-c40c4ff24619.png)
             	Logout: 
-	    ![image](https://user-images.githubusercontent.com/79376134/175649193-47df6028-79dc-474b-9c45-8c20cd420499.png)
+	    ![image](https://user-images.githubusercontent.com/79376134/175765632-19c07551-98df-4b9b-be4c-165d06eec81c.png)
+
 \
 	User 2 : Client User
 	\
   		Signup: 
-	    ![image](https://user-images.githubusercontent.com/79376134/175649327-ff91061d-b387-41d9-9825-afdddb2ae2ca.png)
+	    ![image](https://user-images.githubusercontent.com/79376134/175765657-4466eac2-99fa-477c-84e6-b482c642fff0.png)
             	Email Verification: 
 	    ![image](https://user-images.githubusercontent.com/79376134/175649511-07af9377-eb18-45f8-9649-3277b315a734.png)
 	    	Login:
