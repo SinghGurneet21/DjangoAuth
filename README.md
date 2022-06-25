@@ -1,5 +1,5 @@
 # DjangoAuth
-This is a django application in which we have implemented authentication through which operational user can register, login and manage client users. The application also provides client user to sign up and verify their accounts using email verification.
+This is a django application in which we have implemented authentication through which operational user can register, login and manage client users. The application also provides client user to sign up and verify their accounts using email verification. The application is deployed on heroku and the link is shared below.
 
 Link: https://django-auth-gitub-heroku.herokuapp.com/
 
