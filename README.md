@@ -52,6 +52,7 @@ Postman Test Case:
 	    ![image](https://user-images.githubusercontent.com/79376134/175765657-4466eac2-99fa-477c-84e6-b482c642fff0.png)
             	Email Verification: 
 	    ![image](https://user-images.githubusercontent.com/79376134/175765786-1c2de6dd-f38d-4aaa-ae34-df5eaa2436f0.png)
+	    ![image](https://user-images.githubusercontent.com/79376134/175765902-0c493c03-da40-4fdf-b4b2-137fc4e4ea06.png)
 	    	Login:
 		![image](https://user-images.githubusercontent.com/79376134/175765566-a836b720-64c9-4a4f-94da-404780b3fc1d.png)
 		Logout:
