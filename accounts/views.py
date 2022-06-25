@@ -1,5 +1,3 @@
-import imp
-import re
 from django.views.decorators.csrf import csrf_exempt
 import email
 from unicodedata import name
@@ -7,6 +5,8 @@ from django import http
 from django.shortcuts import render
 from django.core.mail import send_mail
 from django.conf import settings
+from requests import post
+from rsa import sign
 
 
 from accounts.models import ClientUser
@@ -81,3 +81,22 @@ def disable(request):
         client.status = status
         client.save()
         return http.HttpResponse(f'disabled {client.email}')
+
+@csrf_exempt
+def clientlogin(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        client = ClientUser.objects.get(email=email)
+        if not client:
+            return http.HttpResponse('The user does not exist!')
+        else:
+            if password == client.password:
+                return http.HttpResponse(f'{email} logged in')
+            else:
+                return http.HttpResponse('password is incorrect')
+
+def clientlogout(request):
+    if request.method == 'GET':
+        email = request.GET.get('email')
+        return http.HttpResponse(f'{email} logged out')
