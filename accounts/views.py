@@ -96,12 +96,12 @@ def clientlogin(request):
             else:
                 return http.HttpResponse('password is incorrect')
 
+@csrf_exempt
 def clientlogout(request):
-    if request.method == 'GET':
-        email = request.GET.get('email')
-        return http.HttpResponse(f'{email} logged out')
-        # client = ClientUser.objects.get(email=email)
-        # if not client:
-        #     return http.HttpResponse('The user does not exist!')
-        # else:
-        
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        client = ClientUser.objects.get(email=email)
+        if not client:
+            return http.HttpResponse('The user does not exist!')
+        else:
+            return http.HttpResponse(f'{email} logged out')
