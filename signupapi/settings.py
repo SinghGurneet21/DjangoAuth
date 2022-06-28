@@ -141,5 +141,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.office365.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'gs21082001@outlook.com'
-EMAIL_HOST_PASSWORD = '9818628156@Gs'
+EMAIL_HOST_USER = #email_id
+EMAIL_HOST_PASSWORD = #email_password
